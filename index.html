@@ -10,14 +10,14 @@
     <style>
         .navbar {
             transition: all 0.3s ease;
+            background-color: #e6f0fa !important;
         }
         .navbar.scrolled {
-            background-color: lightblue !important;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
         }
         @media (max-width: 768px) {
             .navbar {
-                background-color: lightblue !important;
+                background-color: #e6f0fa !important;
             }
             .menu-toggle .bar {
                 background-color: var(--dark-color) !important;
@@ -232,37 +232,6 @@
         window.addEventListener('scroll', function() {
             const scrollToTop = document.querySelector('.scroll-to-top');
             const navbar = document.querySelector('.navbar');
-            
-            if (window.scrollY > 100) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-            
-            if (window.scrollY > 300) {
-                scrollToTop.classList.add('show');
-            } else {
-                scrollToTop.classList.remove('show');
-            }
-        });
-        
-        // Logo click to scroll to top
-        document.querySelector('.logo-link').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Scroll to top functionality
-        document.querySelector('.scroll-to-top a').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });ument.querySelector('.navbar');
             
             if (window.scrollY > 100) {
                 navbar.classList.add('scrolled');
