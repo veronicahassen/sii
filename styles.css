@@ -203,7 +203,7 @@ header h1 {
     padding: 25px;
     border-radius: 5px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    transition: all 1.2s ease;
     height: 130px;
     overflow: hidden;
     cursor: pointer;
@@ -240,7 +240,7 @@ header h1 {
 
 .service-card p {
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 1.2s ease;
 }
 
 .service-card:hover p {
@@ -251,7 +251,7 @@ header h1 {
     text-align: center;
     margin-top: 15px;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 1.2s ease;
 }
 
 .iso-logo img {
@@ -446,6 +446,7 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 999;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .whatsapp-float:hover {
@@ -456,6 +457,8 @@ footer {
 .whatsapp-float i {
     font-size: 2rem;
     color: var(--light-color);
+    text-decoration: none;
+    display: flex;
 }
 
 /* Responsive Design */
@@ -562,5 +565,14 @@ footer {
     
     .contact-item {
         min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
     }
 }
